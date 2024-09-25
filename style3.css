@@ -1,0 +1,133 @@
+html,body{
+  scroll-behavior: smooth;
+} 
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Ubuntu'
+  }
+  .banner {
+    width: 100%;
+    min-height: 250vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.468), rgba(0, 0, 0, 0.479)), url(background2.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .logo{
+    height :200px;
+  }
+  .navbar {width: 85%;
+    margin: auto ;
+    padding: 35px 0;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+  .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  
+  }
+  .navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  }
+  .navbar ul li::after {
+  content:'' ;
+  height: 3px;
+  width: 0;
+  background : #df9408;
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  transition: 0.5s;
+  }
+  .navbar ul li:hover::after{
+    width: 100% ;
+  }
+  p{
+    font-size: 35px;
+  text-align: left;
+  color: white;
+  margin: 40px 100px;
+  }
+  h1{
+    font-size: 80px;
+    color:white;
+    margin: 40px;
+  }
+  .text{
+    font-size: 75px;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+    color: white;
+    margin: 10px 100px;
+  }
+
+.autoRotate{
+  height: 290px;
+float: right;
+margin: 50px;
+}
+.autoRotate{
+  animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+@keyframes autoRotateAnimation{
+  from{
+  transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.box{
+  color: rgba(0, 0, 0, 0.23);
+}
+.shirt{
+  height: 350px;
+  float: right;;
+  margin: 50px 10px;
+}
+.auto-Blur{
+  animation: autoBlurAnimation;
+
+}
+.autoBLur{
+    animation: autoBLurAnimation linear both;
+    animation-timeline: view();
+}
+@keyframes autoBLurAnimation{
+    0%{
+        filter: blur(40px);
+    }
+    45%, 55%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(40px);
+    }
+}
+.paragraph1{
+  color: white;
+  margin-left: 550px;
+}
+.img{
+  height: 560px;
+  float: left;
+  margin-left: 90px;
+}
+.footer{
+  text-align: center;
+  color: aquamarine;
+  font-style: normal;
+}
+footer{
+  background-color: black ;
+  height: 150px;
+  margin-top: 370px;
+  text-align: center;
+}
